@@ -8,7 +8,7 @@ export const characterCommand = new Command()
   .argument("<name>", "Character name")
   .argument("<realm>", "Realm")
   .argument("<region>", "Region (eu/us)")
-  .action(async (name, realm, region) => {
+  .action(async (name: string, realm: string, region: string) => {
     const spinner = ora("Fetching character...").start();
 
     try {
@@ -28,3 +28,4 @@ Item Level: ${profile.average_item_level}
       console.error(err.message);
     }
   });
+

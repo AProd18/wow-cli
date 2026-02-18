@@ -2,7 +2,7 @@
 
 import { Command } from "commander";
 import { characterCommand } from "./commands/character.ts";
-import { mplusCommand } from "./commands/mplus.js";
+import { mplusCommand } from "./commands/mplus.ts";
 
 const program = new Command();
 
